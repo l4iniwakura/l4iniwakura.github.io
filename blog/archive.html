@@ -1,10 +1,10 @@
 ---
 layout: blog
-title: Все записи
+title: Архив статей
 section: archive
 permalink: /blog/archive/
 ---
-<header class="page-heading"><h1>Все записи</h1><p>Всё, что осталось на этих страницах. От нового к старому.</p></header>
-<div class="search-control" hidden><label for="search">Найти запись</label><input id="search" type="search" placeholder="Название или несколько слов…" autocomplete="off"><p id="search-status" role="status" aria-live="polite"></p></div>
-<section class="archive-posts" aria-label="Список записей">{% for post in site.posts %}{% include post-row.html post=post %}{% else %}<p>Пока нет записей.</p>{% endfor %}<p class="search-empty" hidden>Ничего не нашлось. Попробуйте другие слова.</p></section>
+<header class="page-heading"><h1>Архив статей</h1><p>Все статьи, начиная с последних.</p></header>
+<div class="search-control" hidden><label for="search">Найти статью</label><input id="search" type="search" placeholder="Название или несколько слов…" autocomplete="off"><p id="search-status" role="status" aria-live="polite"></p></div>
+<section class="archive-posts" aria-label="Список статей">{% for post in site.posts %}{% include post-row.html post=post %}{% else %}<p>Пока нет статей.</p>{% endfor %}<p class="search-empty" hidden>Ничего не нашлось. Попробуйте другие слова.</p></section>
 

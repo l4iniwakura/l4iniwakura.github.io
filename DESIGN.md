@@ -1,4 +1,4 @@
-# Тихая комната
+# Блог l4iniwakura
 
 ## Direction
 
@@ -11,6 +11,8 @@ Forest #233c31, deep forest #1b3027, paper #f7f2e7, ink #293c30, amber #ecac67, 
 ## Structure
 
 Sticky green navigation rail on desktop; short two-row masthead on mobile. Paper sheet carries readable content. Blog home: greeting, wide authored illustration, latest posts, topical directory. Directory contains real category lists and honest empty states. Archive includes progressive search. Article is a calm reading column with semantic headings, code, tables and giscus.
+
+Interface copy is neutral and descriptive. The user explicitly separates the warm visual aesthetic from the editorial voice and has not supplied blog topics. The hero identifies the blog, the illustration is compact, and posts lead with a larger 500-weight underlined title followed by date and description. Keep only the general notes catalog until the author defines topics.
 
 ## Interaction and budget
 

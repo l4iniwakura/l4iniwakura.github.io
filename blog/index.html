@@ -1,22 +1,22 @@
 ---
 layout: blog
-title: Тихая комната
+title: Блог l4iniwakura
 section: home
 ---
 <header class="welcome">
   <div class="welcome-copy">
-    <h1>Оставайтесь. <br>Здесь тепло.</h1>
-    <p>Маленький уголок интернета для мыслей, находок и вещей, которые хочется сохранить.</p>
-    <a class="button" href="#posts">Почитать записи <span aria-hidden="true">↓</span></a>
+    <h1>Блог<br>l4iniwakura</h1>
+    <p>Статьи и заметки.</p>
+    <a class="button" href="#posts">К статьям <span aria-hidden="true">↓</span></a>
   </div>
-  <figure class="room-picture"><img src="{{ '/assets/quiet-room.webp' | relative_url }}" alt="Оранжевая лампа освещает книгу, папоротник и зелёный ковёр в вечерней комнате" width="1536" height="1024" fetchpriority="high"><figcaption>Вечер. Лампа горит. Можно никуда не спешить.</figcaption></figure>
+  <figure class="room-picture"><img src="{{ '/assets/quiet-room.webp' | relative_url }}" alt="Оранжевая лампа освещает книгу, папоротник и зелёный ковёр в вечерней комнате" width="1536" height="1024" fetchpriority="high"></figure>
 </header>
 <section class="posts-section" id="posts" aria-labelledby="posts-title">
-  <div class="section-heading"><h2 id="posts-title">На полях</h2><a href="{{ '/blog/archive/' | relative_url }}">Все записи ↗</a></div>
-  {% for post in site.posts limit:5 %}{% include post-row.html post=post %}{% else %}<p>Здесь скоро появится первая запись.</p>{% endfor %}
+  <div class="section-heading"><h2 id="posts-title">Последние статьи</h2><a href="{{ '/blog/archive/' | relative_url }}">Все статьи ↗</a></div>
+  {% for post in site.posts limit:5 %}{% include post-row.html post=post %}{% else %}<p>Пока нет статей.</p>{% endfor %}
 </section>
 <section class="catalog-preview" aria-labelledby="catalog-title">
-  <div><h2 id="catalog-title">По тропинкам</h2><p>У каждой мысли — своя полка.</p></div>
+  <div><h2 id="catalog-title">Каталоги</h2></div>
   <div class="catalog-links">{% for catalog in site.data.catalogs %}<a href="{{ '/blog/catalogs/' | relative_url }}#{{ catalog.key }}"><span>{{ catalog.name }}</span><span aria-hidden="true">↗</span></a>{% endfor %}</div>
 </section>
 

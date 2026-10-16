@@ -61,7 +61,7 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; width: fit-content; background: var(--ink); color: var(--paper); padding: 12px 19px; text-decoration: none; border-radius: 3px; font-size: 14px; transition: background .2s ease, transform .2s ease; }
 .button:hover { background: var(--link); color: #fff8ed; transform: translateY(-2px); }
 .room-picture { position: relative; overflow: hidden; background: var(--forest-deep); }
-.room-picture img { aspect-ratio: 2.18; object-fit: cover; object-position: 50% 55%; transition: filter .7s ease; }
+.room-picture img { aspect-ratio: 3.6; object-fit: cover; object-position: 50% 55%; transition: filter .7s ease; }
 .dimmed .room-picture img { filter: brightness(.76) saturate(.88); }
 .room-picture figcaption { padding: 12px 24px; color: var(--dark-muted); background: var(--forest-deep); font: 13px/1.5 var(--sans); text-align: right; }
 .posts-section { padding: 46px 48px 56px; scroll-margin-top: 20px; }
@@ -71,8 +71,8 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
 .post-row + .post-row { margin-top: 18px; }
 .post-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 22px; font-size: 13px; line-height: 1.6; color: var(--muted); margin-bottom: 13px; font-variant-numeric: tabular-nums; }
 .post-meta span { color: var(--link); }
-.post-row h3 { margin-bottom: 14px; }
-.post-row h3 a { text-decoration: none; transition: color .2s ease; }
+.post-row h3 { margin-bottom: 12px; font-size: 32px; font-weight: 500; line-height: 1.3; }
+.post-row h3 a { text-decoration: underline; text-decoration-color: #a5ad99; text-decoration-thickness: 1px; text-underline-offset: .18em; transition: color .2s ease; }
 .post-row > p { color: var(--ink); max-width: 60ch; }
 .read-link { display: inline-flex; align-items: center; gap: 15px; font-size: 14px; margin-top: 20px; color: var(--link); text-decoration: none; }
 .read-link span { transition: transform .2s ease; }
@@ -190,13 +190,13 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
   .welcome-copy h1 { font-size: 43px; line-height: 1.15; }
   .welcome-copy p { margin-top: 22px; max-width: 33ch; font-size: 16px; }
   .welcome-copy .button { margin-top: 23px; }
-  .room-picture img { aspect-ratio: 1.35; }
+  .room-picture img { aspect-ratio: 2.15; }
   .room-picture figcaption { font-size: 13px; padding: 11px 20px; text-align: left; }
   .posts-section, .catalog-preview { padding-left: 24px; padding-right: 24px; }
   h2 { font-size: 28px; }
   .section-heading { gap: 12px; margin-bottom: 15px; }
   .section-heading > a { font-size: 13px; }
-  .post-row h3 { font-size: 25px; }
+  .post-row h3 { font-size: 28px; }
   .catalog-preview { grid-template-columns: 1fr; gap: 25px; }
   .catalog-links { gap: 14px; }
   .footer { padding: 26px 24px; gap: 10px 20px; }
