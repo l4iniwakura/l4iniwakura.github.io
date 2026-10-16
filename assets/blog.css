@@ -57,7 +57,7 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
 .welcome { padding: 48px 0 0; }
 .welcome-copy { padding: 0 48px 38px; display: grid; grid-template-columns: 1.1fr 1fr; gap: 22px 40px; align-items: center; }
 .welcome-copy h1 { grid-row: span 2; }
-.welcome-copy p { max-width: 30ch; color: var(--muted); padding-top: 4px; }
+.welcome-copy p { max-width: 30ch; color: var(--ink); padding-top: 4px; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; width: fit-content; background: var(--ink); color: var(--paper); padding: 12px 19px; text-decoration: none; border-radius: 3px; font-size: 14px; transition: background .2s ease, transform .2s ease; }
 .button:hover { background: var(--link); color: #fff8ed; transform: translateY(-2px); }
 .room-picture { position: relative; overflow: hidden; background: var(--forest-deep); }
@@ -73,7 +73,7 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
 .post-meta span { color: var(--link); }
 .post-row h3 { margin-bottom: 14px; }
 .post-row h3 a { text-decoration: none; transition: color .2s ease; }
-.post-row > p { color: var(--muted); max-width: 60ch; }
+.post-row > p { color: var(--ink); max-width: 60ch; }
 .read-link { display: inline-flex; align-items: center; gap: 15px; font-size: 14px; margin-top: 20px; color: var(--link); text-decoration: none; }
 .read-link span { transition: transform .2s ease; }
 .read-link:hover span { transform: translate(3px, -3px); }
@@ -82,7 +82,7 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
 .catalog-links { display: grid; gap: 12px; align-content: start; }
 .catalog-links a { display: flex; gap: 25px; justify-content: space-between; text-decoration: none; padding: 4px 0; }
 .catalog-links a span:last-child { color: var(--link); }
-.footer { display: flex; flex-wrap: wrap; gap: 15px 28px; justify-content: space-between; padding: 30px 48px; font-size: 12px; color: var(--muted); }
+.footer { display: flex; flex-wrap: wrap; gap: 15px 28px; justify-content: space-between; padding: 30px 48px; font-size: 13px; color: var(--muted); }
 .footer a { text-decoration: none; }
 .page-heading { padding: 58px 48px 36px; }
 .page-heading p { margin-top: 24px; color: var(--muted); max-width: 52ch; }
@@ -152,7 +152,7 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
   .owner { margin-left: 38px; }
   .welcome-copy { padding-left: 32px; padding-right: 32px; gap: 22px; }
   .welcome-copy h1 { font-size: 42px; }
-  .welcome-copy p { font-size: 15px; }
+  .welcome-copy p { font-size: 16px; }
   .posts-section, .catalog-preview { padding-left: 32px; padding-right: 32px; }
   .article { padding-left: 36px; padding-right: 36px; }
 }
@@ -191,7 +191,7 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
   .welcome-copy p { margin-top: 22px; max-width: 33ch; font-size: 16px; }
   .welcome-copy .button { margin-top: 23px; }
   .room-picture img { aspect-ratio: 1.35; }
-  .room-picture figcaption { font-size: 12px; padding: 11px 20px; text-align: left; }
+  .room-picture figcaption { font-size: 13px; padding: 11px 20px; text-align: left; }
   .posts-section, .catalog-preview { padding-left: 24px; padding-right: 24px; }
   h2 { font-size: 28px; }
   .section-heading { gap: 12px; margin-bottom: 15px; }
