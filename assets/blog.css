@@ -61,7 +61,7 @@ h3 { font-size: 26px; line-height: 1.4; letter-spacing: -.02em; }
 .button { display: inline-flex; align-items: center; justify-content: space-between; gap: 28px; width: fit-content; background: var(--ink); color: var(--paper); padding: 12px 19px; text-decoration: none; border-radius: 3px; font-size: 14px; transition: background .2s ease, transform .2s ease; }
 .button:hover { background: var(--link); color: #fff8ed; transform: translateY(-2px); }
 .room-picture { position: relative; overflow: hidden; background: var(--forest-deep); }
-.room-picture img { aspect-ratio: 3.6; object-fit: cover; object-position: 50% 55%; transition: filter .7s ease; }
+.room-picture img { aspect-ratio: 3.6; object-fit: cover; object-position: 50% 30%; transition: filter .7s ease; }
 .dimmed .room-picture img { filter: brightness(.76) saturate(.88); }
 .room-picture figcaption { padding: 12px 24px; color: var(--dark-muted); background: var(--forest-deep); font: 13px/1.5 var(--sans); text-align: right; }
 .posts-section { padding: 46px 48px 56px; scroll-margin-top: 20px; }
