@@ -1,9 +1,22 @@
-<!doctype html>
-<html lang="ru">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Блог — l4iniwakura</title>
-</head>
-<body></body>
-</html>
+---
+layout: blog
+title: Тихая комната
+section: home
+---
+<header class="welcome">
+  <div class="welcome-copy">
+    <h1>Оставайтесь.<br>Здесь тепло.</h1>
+    <p>Маленький уголок интернета для мыслей, находок и вещей, которые хочется сохранить.</p>
+    <a class="button" href="#posts">Почитать записи <span aria-hidden="true">↓</span></a>
+  </div>
+  <figure class="room-picture"><img src="{{ '/assets/quiet-room.webp' | relative_url }}" alt="Оранжевая лампа освещает книгу, папоротник и зелёный ковёр в вечерней комнате" width="1536" height="1024" fetchpriority="high"><figcaption>Вечер. Лампа горит. Можно никуда не спешить.</figcaption></figure>
+</header>
+<section class="posts-section" id="posts" aria-labelledby="posts-title">
+  <div class="section-heading"><h2 id="posts-title">На полях</h2><a href="{{ '/blog/archive/' | relative_url }}">Все записи ↗</a></div>
+  {% for post in site.posts limit:5 %}{% include post-row.html post=post %}{% else %}<p>Здесь скоро появится первая запись.</p>{% endfor %}
+</section>
+<section class="catalog-preview" aria-labelledby="catalog-title">
+  <div><h2 id="catalog-title">По тропинкам</h2><p>У каждой мысли — своя полка.</p></div>
+  <div class="catalog-links">{% for catalog in site.data.catalogs %}<a href="{{ '/blog/catalogs/' | relative_url }}#{{ catalog.key }}"><span>{{ catalog.name }}</span><span aria-hidden="true">↗</span></a>{% endfor %}</div>
+</section>
+

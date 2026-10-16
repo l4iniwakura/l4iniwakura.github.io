@@ -1,0 +1,40 @@
+title: Тихая комната
+description: Личный блог l4iniwakura. Место для мыслей, маленьких открытий и неспешного чтения.
+url: https://l4iniwakura.github.io
+baseurl: ""
+lang: ru
+timezone: Asia/Krasnoyarsk
+permalink: /blog/:title/
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+feed:
+  path: blog/feed.xml
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      comments: true
+giscus:
+  repo: l4iniwakura/l4iniwakura.github.io
+  repo_id: R_kgDOVL_6kw
+  category: Announcements
+  category_id: DIC_kwDOVL_6k84DIlyI
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - PRODUCT.md
+  - DESIGN.md
+  - AUTHORING.md
+  - vendor
+  - work
+  - node_modules
+

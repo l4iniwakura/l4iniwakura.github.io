@@ -1,0 +1,21 @@
+---
+layout: blog
+title: Каталоги
+section: catalogs
+permalink: /blog/catalogs/
+---
+<header class="page-heading"><h1>Каталоги</h1><p>Небольшие тропинки по темам. Выбирайте ту, куда хочется свернуть.</p></header>
+<nav class="topic-nav" aria-label="Темы">{% for catalog in site.data.catalogs %}<a href="#{{ catalog.key }}">{{ catalog.name }}</a>{% endfor %}</nav>
+<div class="catalog-sections">
+{% for catalog in site.data.catalogs %}
+<section class="catalog-section" id="{{ catalog.key }}" aria-labelledby="title-{{ catalog.key }}">
+  <h2 id="title-{{ catalog.key }}">{{ catalog.name }}</h2><p class="catalog-description">{{ catalog.description }}</p>
+  {% assign posts = site.categories[catalog.key] %}
+  {% for post in posts %}{% include post-row.html post=post %}{% else %}<p class="empty-note">На этой полке пока тихо. Записи ещё появятся.</p>{% endfor %}
+</section>
+{% endfor %}
+{% for category in site.categories %}{% assign known = false %}{% for catalog in site.data.catalogs %}{% if catalog.key == category[0] %}{% assign known = true %}{% endif %}{% endfor %}{% unless known %}
+<section class="catalog-section" id="{{ category[0] | slugify }}"><h2>{{ category[0] | escape }}</h2>{% for post in category[1] %}{% include post-row.html post=post %}{% endfor %}</section>
+{% endunless %}{% endfor %}
+</div>
+

@@ -1,0 +1,17 @@
+---
+layout: blog
+---
+<article class="article">
+  <header class="article-header">
+    <a class="back-link" href="{{ '/blog/' | relative_url }}">← К записям</a>
+    <h1>{{ page.title | escape }}</h1>
+    <p class="article-description">{{ page.description | escape }}</p>
+    <div class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}">{% include date.html date=page.date %}</time>{% if page.demo %}<span>Демо-статья</span>{% endif %}</div>
+    <div class="post-topics">{% for category in page.categories %}{% assign label = category %}{% for catalog in site.data.catalogs %}{% if catalog.key == category %}{% assign label = catalog.name %}{% endif %}{% endfor %}<a href="{{ '/blog/catalogs/' | relative_url }}#{{ category | slugify }}">{{ label | escape }}</a>{% endfor %}</div>
+  </header>
+  <div class="prose">{{ content }}</div>
+  {% if page.tags.size > 0 %}<p class="tags">{% for tag in page.tags %}<span>#{{ tag | escape }}</span> {% endfor %}</p>{% endif %}
+  <nav class="post-navigation" aria-label="Другие записи">{% if page.previous %}<a href="{{ page.previous.url | relative_url }}">← {{ page.previous.title | escape }}</a>{% endif %}{% if page.next %}<a href="{{ page.next.url | relative_url }}">{{ page.next.title | escape }} →</a>{% endif %}</nav>
+  {% if page.comments %}{% include comments.html %}{% endif %}
+</article>
+
