@@ -6,8 +6,8 @@
 
 ## Новая запись
 
-1. Создайте `_posts/YYYY-MM-DD-short-name.md`. Можно прямо через GitHub → Add file → Create new file.
-2. Скопируйте параметры из демо-статьи, измените дату, название, описание и каталоги. Уберите `demo: true`.
+1. Скопируйте содержимое [`POST_TEMPLATE.md`](POST_TEMPLATE.md) в новый файл `_posts/YYYY-MM-DD-short-name.md`. Можно прямо через GitHub → Add file → Create new file.
+2. Измените название, дату (в том числе в имени файла), описание и каталог в `categories`. `notes` — ключ каталога «Заметки». Сам `POST_TEMPLATE.md` оставьте как образец: он исключён из публикации.
 3. Напишите текст в Markdown и сохраните в `main`.
 4. Дождитесь зелёной сборки `pages build and deployment` во вкладке Actions.
 

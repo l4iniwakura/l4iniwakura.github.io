@@ -34,6 +34,7 @@ exclude:
   - PRODUCT.md
   - DESIGN.md
   - AUTHORING.md
+  - POST_TEMPLATE.md
   - vendor
   - work
   - node_modules
